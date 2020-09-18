@@ -1,0 +1,152 @@
+/* Gjør teksten hvit (jeg vet den egentlig skal være sort, men det passer veldig dårlig med stilen),
+legger til et bildebakgrunn, gjør at alt på siden er sentrert, begrenser siden til 1000px bred, lager 
+en liten margin på bunn for å gjøre plass til footer og fjerner litt på toppen for at tittel skal komme nærmere "taket" */
+body {
+    color: #FFFFFF;
+    background: url(bilder/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+    position: center;
+
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+
+/* Ramme rundt navigation baren, gir den en bakgrunnsfarge, øker mellomrommet mellom link og ramme,
+ og lager et littet mellomrom mellom navbar og hovedområde */
+nav {
+    background-color: black;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #582110;
+
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Øker størrelsen på teksten i navigation baren og øker mellomrommet mellom hver link */
+nav a {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Fin ramme rundt hovedområdet og setter en bakgrunnsfarge som skiller fra bakgrunnen i body */
+article {
+    background-color: black;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #582110;
+}
+
+/* Fin liten ramme for å skille hvert element/artikkel på hovedsiden */
+article section {
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-color: #582110;
+}
+
+/* Linker i artiklene får en underline for å vise at den er mulig å klikke på */
+article a {
+    text-decoration: underline;
+}
+
+/* Gjør at bildet og figcaption kommer til høyre for teksten med en fin liten border.
+Legger til at figure er 50% av body bredden, for så å gjøre at bildet er 100% av figure, noe som vil
+gjøre at bildet er 50% av bredden til siden.*/
+figure {
+    float: right;
+    width: 50%;
+
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #582110;
+}
+img {
+    width: 100%;
+}
+
+/* Viser CSSen i en liten scroll ting som gjør den enkel å lese gjennom */
+pre code {
+    overflow: scroll;
+    display: block;
+    padding: 20px;
+    text-align: left;
+    max-height: 600px;
+  }
+
+/* Setter footern fast i bunn og pyntern litt */
+footer {
+    width: 1000px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    height: 4%;
+    padding-top: -30px;
+  }
+
+/* Fjerner de dottene forran elementer i listene */
+li {
+    list-style: none;
+}
+
+/* Gjør alle linker hvite og fjerner at underline alltid er aktiv */
+a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+/* Legger til at underline kun kommer når man holder over lenken */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Gjør slik at linkene i sammendragene på hovedsiden ser ut som knapper */
+#articlesummary article a{
+    background-color: #582110;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* De neste 4 er for å få box modellen til å fungere med borders og sentrering osv. */
+.margin {
+    color: #000000;
+    background: #a34c1a;
+    margin: 16px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 6px;
+}
+
+.border {
+    color: #FFFFFF;
+    background: #110b09;
+    margin: 16px;
+    padding: 0px;
+    border-style: dashed;
+    border-width: 6px;
+}
+
+.padding {
+    color: #000000;
+    background: #a34c1a;
+    margin: 16px;
+    padding: 22px;
+    border-style: ridge;
+    border-width: 6px;
+    align-items: center;
+}
+
+.content {
+    color: #FFFFFF;
+    align-self: center;
+    background: #110b09;
+    border-style: double;
+    border-width: 6px;
+    margin: 6px;
+    padding: 0px;
+    width: 800px;
+}
